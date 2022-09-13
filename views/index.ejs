@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="stylesheets/index.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<title>Pacman</title>
+	</head>
+	<body>
+		<!-- <div id="score"><h1>Pacman</h1></div> -->
+		<div class="container">
+			<div id="world"></div>
+
+			<div id="character_preview">
+				<img src="/img/banner.png" alt="pacman banner" id="banner" />
+				<div id="pacman_preview"></div>
+				<p id="name"></p>
+			</div>
+			<div id="chatbox">
+				<form action="">
+					<input type="text" id="chat" />
+					<input type="submit" value="Send" />
+				</form>
+			</div>
+			<div id="pacman"></div>
+			<div class="pacmans"></div>
+		</div>
+		<div id="gameover">
+			<h1>Game Over</h1>
+		</div>
+		<div id="again">
+			<h1>Play Again?</h1>
+			<div class="buttons">
+				<button id="yes" style="margin-right: 10px">Yes</button>
+			</div>
+		</div>
+
+		<div id="success">
+			<h1>World Complete!</h1>
+		</div>
+
+		<div id="title"><h1>PACMAN</h1></div>
+		<div id="score">Score: <span id="points">0</span></div>
+	</body>
+	<script type="module" src="js/index.js"></script>
+</html>

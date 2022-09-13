@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+	box-sizing: border-box;
+	font-family: "Press Start 2P", cursive;
+	color: white;
+}
+
+body {
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 90vh;
+	font-family: "Press Start 2P", cursive;
+}
+
+form {
+	position: relative;
+	top: 90%;
+}
+input[type="text"] {
+	background-color: transparent;
+	outline: none;
+	padding: 4px 20px;
+	font-size: 0.8rem;
+	width: 60%;
+}
+
+input[type="submit"] {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+#chatbox {
+	border: 1px solid white;
+	height: 400px;
+	width: 300px;
+	padding: 20px;
+	position: absolute;
+	left: 65%;
+}
+
+#chatbox p {
+	font-size: 0.7rem;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.row {
+	display: flex;
+}
+
+.row div {
+	height: 30px;
+	width: 30px;
+}
+
+.brick {
+	background-color: rgb(20, 20, 133);
+	background: url(/img/tile.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-size: center;
+}
+
+.coin {
+	background: url(/img/coin.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40%;
+}
+
+.cherry {
+	background: url(/img/cherry.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 90%;
+}
+
+#pacman {
+	background: url(/img/pagman.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	top: 123px;
+	left: 552px;
+	height: 30px;
+	width: 30px;
+}
+
+#pacman_preview {
+	background: url(/img/pacman_preview.gif);
+	height: 300px;
+	width: 400px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 100px;
+	left: 130px;
+}
+
+#name {
+	position: absolute;
+	top: 390px;
+	left: 230px;
+}
+
+#banner {
+	position: absolute;
+	top: 0;
+	left: 100px;
+}
+
+#score {
+	border: 1px solid white;
+	padding: 4px 10px;
+}
+
+#gameover,
+#success {
+	position: absolute;
+	display: none;
+}
+
+#gameover {
+	top: 150px;
+}
+
+button {
+	font-family: "Press Start 2P", cursive;
+	background-color: orange;
+	padding: 5px 10px;
+}
+
+#again {
+	position: absolute;
+	top: 270px;
+	display: none;
+}
+
+.buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#title h1 {
+	letter-spacing: 10px;
+}
+
+.name {
+	font-size: 0.5rem;
+	position: absolute;
+	top: 103px;
+	left: 533px;
+}
+
+.pacman {
+	background: url(/img/pagman.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	height: 30px;
+	width: 30px;
+}
